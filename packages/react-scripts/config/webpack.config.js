@@ -219,6 +219,7 @@ module.exports = function(webpackEnv) {
             mangle: {
               safari10: true,
             },
+            keep_fnames: true,
             output: {
               ecma: 5,
               comments: false,
@@ -263,6 +264,7 @@ module.exports = function(webpackEnv) {
       // Keep the runtime chunk separated to enable long term caching
       // https://twitter.com/wSokra/status/969679223278505985
       runtimeChunk: true,
+      concatenateModules: false
     },
     resolve: {
       // This allows you to set a fallback for where Webpack should look for modules.
