@@ -218,6 +218,7 @@ module.exports = function(webpackEnv) {
             mangle: {
               safari10: true,
             },
+            keep_fnames: true,
             output: {
               ecma: 5,
               comments: false,
